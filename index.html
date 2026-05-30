@@ -1,593 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CP LAB Smart Production Dashboard | Virtual Commissioning</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CP LAB Smart Production Dashboard | Siemens Virtual Commissioning</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<!-- ================= NAV ================= -->
-<nav>
-    <div class="logo">CP LAB Dashboard</div>
-    <ul>
-        <li><a href="#challenge">Overview</a></li>
-        <li><a href="#problem">Problem</a></li>
-        <li><a href="#architecture">Architecture</a></li>
-        <li><a href="#virtual">Virtual Commissioning</a></li>
-        <li><a href="#dashboard">Dashboard</a></li>
-        <li><a href="#results">Results</a></li>
-        <li><a href="#reflection">Reflection</a></li>
-        <li><a href="#references">References</a></li>
-    </ul>
-</nav>
+  <nav class="floating-nav">
+    <a href="#overview">Overview</a>
+    <a href="#problem">Problem</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#commissioning">Virtual Commissioning</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#demo">Demo</a>
+    <a href="#results">Results</a>
+  </nav>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
+  <section class="hero" id="home">
     <div class="hero-overlay"></div>
-
-    <div class="floating-nav">
-        <a href="#challenge">Overview</a>
-        <a href="#problem">Problem</a>
-        <a href="#architecture">Architecture</a>
-        <a href="#virtual">Virtual Commissioning</a>
-        <a href="#dashboard">Dashboard</a>
-        <a href="#results">Results</a>
+    <div class="hero-content reveal">
+      <div class="subtitle">SIEMENS • VIRTUAL COMMISSIONING • OPC UA • NODE-RED</div>
+      <h1>CP LAB Smart Production Dashboard</h1>
+      <p>Digital twin validation, PLC control, real-time monitoring and automated reporting for a FESTO Workpiece Discharge Station.</p>
+      <a href="#overview" class="btn">Explore Project</a>
     </div>
+  </section>
 
-    <div class="hero-content">
-        <div class="subtitle">
-            SIEMENS • VIRTUAL COMMISSIONING • OPC UA • INDUSTRY 4.0
-        </div>
-
-        <h1>CP LAB SMART DASHBOARD</h1>
-
-        <p>
-            A connected production monitoring and virtual commissioning solution for the
-            Festo Workpiece Discharge Station using Siemens NX, TIA Portal, PLCSIM Advanced,
-            OPC UA and Node-RED.
-        </p>
-
-        <a href="#challenge" class="btn">Explore Project</a>
-    </div>
-</section>
-
-<!-- ================= PROJECT OVERVIEW ================= -->
-<section class="section challenge-section" id="challenge">
-    <div class="challenge-bg-glow"></div>
-
-    <div class="challenge-top">
-        <div class="challenge-heading">
-            <span class="challenge-tag">SIEMENS CONNECTED CURRICULUM PROJECT</span>
-
-            <h2 class="title">Smart Production Monitoring and Virtual Commissioning</h2>
-
-            <p class="text">
-                This project presents the development of a smart production dashboard integrated
-                with the virtual commissioning of a Festo CP Lab Workpiece Discharge Station.
-                The solution demonstrates how a digital twin, PLC control logic, simulated
-                commissioning, OPC UA connectivity and web-based visualisation can work together
-                to support modern Industry 4.0 manufacturing.
-            </p>
-        </div>
-
-        <div class="challenge-stats">
-            <div class="challenge-stat">
-                <h3>5</h3>
-                <span>Dashboard Pages</span>
-            </div>
-
-            <div class="challenge-stat">
-                <h3>3</h3>
-                <span>Report Outputs</span>
-            </div>
-
-            <div class="challenge-stat">
-                <h3>100%</h3>
-                <span>Virtual Validation Focus</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="challenge-layout">
-        <div class="challenge-content">
-            <div class="challenge-card-glass">
-                <h3>Project Aim</h3>
-
-                <p>
-                    The aim was to design a practical digital manufacturing system that allows
-                    the workpiece discharge process to be validated before physical deployment
-                    and then monitored through a professional Siemens-inspired dashboard.
-                </p>
-
-                <p>
-                    The project combines mechanical simulation, PLC programming, HMI development,
-                    real-time data acquisition, historical logging, fault monitoring and automated
-                    reporting into one connected system.
-                </p>
-            </div>
-
-            <div class="challenge-feature-grid">
-                <div class="challenge-feature">
-                    <div class="feature-icon">◉</div>
-                    <h4>Virtual Commissioning</h4>
-                    <p>Siemens NX MCD and PLCSIM Advanced used to test station behaviour before deployment.</p>
-                </div>
-
-                <div class="challenge-feature">
-                    <div class="feature-icon">◉</div>
-                    <h4>PLC Control Logic</h4>
-                    <p>TIA Portal SCL logic controls the automatic workpiece handling sequence.</p>
-                </div>
-
-                <div class="challenge-feature">
-                    <div class="feature-icon">◉</div>
-                    <h4>OPC UA Connectivity</h4>
-                    <p>Production data is exchanged securely between Siemens systems and Node-RED.</p>
-                </div>
-
-                <div class="challenge-feature">
-                    <div class="feature-icon">◉</div>
-                    <h4>Smart Dashboard</h4>
-                    <p>Node-RED Dashboard 2.0 visualises live KPIs, history, alarms and reports.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="challenge-image-wrap">
-            <div class="image-glow"></div>
-            <div class="tech-card">
-                <h3>Core Technologies</h3>
-                <ul>
-                    <li>Siemens NX Mechatronics Concept Designer</li>
-                    <li>TIA Portal and S7-PLCSIM Advanced</li>
-                    <li>SIMATIC WinCC Runtime Advanced HMI</li>
-                    <li>OPC UA industrial communication</li>
-                    <li>Node-RED Dashboard 2.0</li>
-                    <li>CSV, PDF and email reporting</li>
-                </ul>
-            </div>
-
-            <div class="floating-badge badge1">DIGITAL TWIN</div>
-            <div class="floating-badge badge2">REAL-TIME DATA</div>
-            <div class="floating-badge badge3">SMART MANUFACTURING</div>
-        </div>
-    </div>
-</section>
-
-<!-- ================= PROBLEM DEFINITION ================= -->
-<section class="section dark" id="problem">
-    <h2 class="title">Problem Definition and Motivation</h2>
-
+  <section class="section" id="overview">
+    <span class="section-tag">PROJECT OVERVIEW</span>
+    <h2 class="title">A Connected Smart Manufacturing Solution</h2>
     <p class="text">
-        Traditional commissioning often takes place after mechanical installation, which means
-        logic errors, sensor problems and sequencing issues may only be discovered late in the
-        project. This can increase cost, delay deployment and create safety risks on the shop floor.
-        At the same time, production systems often generate valuable data that is not displayed in
-        a clear or useful format for operators and engineers.
+      This project demonstrates the development of a Siemens-focused smart production monitoring system for a FESTO CP Lab Workpiece Discharge Station. The solution combines virtual commissioning, PLC simulation, WinCC HMI development, OPC UA communication and a Siemens-themed Node-RED dashboard to create a complete Industry 4.0 workflow.
+    </p>
+
+    <div class="feature-grid">
+      <div class="feature-card"><h3>Virtual Commissioning</h3><p>Digital validation of station movement, sensors, actuators and sequence logic before physical deployment.</p></div>
+      <div class="feature-card"><h3>OPC UA Connectivity</h3><p>Real-time data communication between Siemens PLC variables and the Node-RED dashboard.</p></div>
+      <div class="feature-card"><h3>Production Monitoring</h3><p>Live total count, left/right storage count, system status, E-stop status and storage availability.</p></div>
+      <div class="feature-card"><h3>Automated Reporting</h3><p>CSV, PDF and email reporting to support traceability, documentation and decision-making.</p></div>
+    </div>
+  </section>
+
+  <section class="section dark" id="problem">
+    <span class="section-tag">PROBLEM DEFINITION</span>
+    <h2 class="title">Why This Project Matters</h2>
+    <p class="text">
+      Traditional commissioning can expose logic errors, sensor faults and sequence problems late in the development process. These issues may increase downtime, delay deployment and create unnecessary engineering cost. This project addresses that problem by validating the system virtually first, then presenting real-time operational data through a modern industrial dashboard.
     </p>
 
     <div class="challenge-grid">
-        <div class="challenge-card">
-            <h3>Late Commissioning Errors</h3>
-            <p>
-                PLC sequence faults and incorrect actuator behaviour can be expensive to correct
-                if discovered only after physical installation.
-            </p>
-        </div>
-
-        <div class="challenge-card">
-            <h3>Limited Operator Visibility</h3>
-            <p>
-                Without a connected dashboard, operators may not have clear visibility of total
-                counts, storage status, alarms or historical production trends.
-            </p>
-        </div>
-
-        <div class="challenge-card">
-            <h3>Manual Reporting</h3>
-            <p>
-                Production summaries often require manual data collection. This project replaces
-                manual recording with automated CSV, PDF and email-based reporting.
-            </p>
-        </div>
+      <div class="challenge-card"><h3>Limited Visibility</h3><p>Operators need clear access to production count, storage status and system health in one location.</p></div>
+      <div class="challenge-card"><h3>Late Fault Detection</h3><p>Commissioning problems should be found digitally before they affect the real production system.</p></div>
+      <div class="challenge-card"><h3>Manual Reporting</h3><p>Production data should be automatically recorded and exported instead of being manually written down.</p></div>
     </div>
-</section>
+  </section>
 
-<!-- ================= SYSTEM ARCHITECTURE ================= -->
-<section class="section" id="architecture">
-    <h2 class="title">System Architecture</h2>
-
+  <section class="section" id="architecture">
+    <span class="section-tag">SYSTEM ARCHITECTURE</span>
+    <h2 class="title">From Digital Twin to Live Dashboard</h2>
     <p class="text">
-        The project is structured as a connected digital manufacturing architecture. Siemens NX
-        represents the mechanical station, TIA Portal provides the PLC control logic, PLCSIM
-        Advanced simulates the controller, WinCC provides operator interaction, and Node-RED
-        creates the web dashboard and reporting layer.
+      The system architecture connects the virtual model, PLC control logic, HMI interface and dashboard layer. Siemens NX Mechatronics Concept Designer represents the station digitally, TIA Portal manages PLC control, S7-PLCSIM Advanced simulates the controller, WinCC Runtime Advanced provides HMI operation and Node-RED visualises the production data through OPC UA.
     </p>
 
-    <div class="flow-system">
-        <div class="flow-card">
-            <div class="flow-icon">01</div>
-            <h3>Digital Twin</h3>
-            <p>NX Mechatronics Concept Designer models the workpiece station, physics, joints, sensors and actuators.</p>
-        </div>
-
-        <div class="flow-arrow">→</div>
-
-        <div class="flow-card">
-            <div class="flow-icon">02</div>
-            <h3>PLC Simulation</h3>
-            <p>TIA Portal and S7-PLCSIM Advanced validate the automatic sequence before physical commissioning.</p>
-        </div>
-
-        <div class="flow-arrow">→</div>
-
-        <div class="flow-card">
-            <div class="flow-icon">03</div>
-            <h3>Industrial Communication</h3>
-            <p>OPC UA transfers production tags such as count, system status, E-stop and storage state.</p>
-        </div>
-
-        <div class="flow-arrow">→</div>
-
-        <div class="flow-card">
-            <div class="flow-icon">04</div>
-            <h3>Dashboard and Reports</h3>
-            <p>Node-RED visualises live data, stores history, logs alarms and exports production reports.</p>
-        </div>
+    <div class="process-line">
+      <div class="process-step"><span>01</span><h3>NX MCD</h3><p>Digital twin and station behaviour</p></div>
+      <div class="arrow">→</div>
+      <div class="process-step"><span>02</span><h3>TIA Portal</h3><p>PLC control logic and sequence</p></div>
+      <div class="arrow">→</div>
+      <div class="process-step"><span>03</span><h3>PLCSIM</h3><p>Virtual PLC execution</p></div>
+      <div class="arrow">→</div>
+      <div class="process-step"><span>04</span><h3>OPC UA</h3><p>Industrial data communication</p></div>
+      <div class="arrow">→</div>
+      <div class="process-step"><span>05</span><h3>Node-RED</h3><p>Dashboard, logs and reports</p></div>
     </div>
-</section>
+  </section>
 
-<!-- ================= VIRTUAL COMMISSIONING ================= -->
-<section class="section dark" id="virtual">
-    <h2 class="title">Virtual Commissioning Workflow</h2>
-
+  <section class="section dark" id="commissioning">
+    <span class="section-tag">VIRTUAL COMMISSIONING</span>
+    <h2 class="title">Digital Validation of the Workpiece Discharge Station</h2>
     <p class="text">
-        The virtual commissioning stage was the foundation of the project. The Festo Workpiece
-        Discharge Station CAD model was used without changing its geometry. Instead, the model
-        was enhanced by applying physics, joints, constraints, sensors, actuators and signal
-        connections so that realistic behaviour could be tested in a simulated environment.
+      A virtual commissioning model was developed to replicate the FESTO Workpiece Discharge Station before final deployment. The model includes the conveyor, horizontal and vertical movements, gripper, storage areas, sensors and actuator behaviour. This enabled PLC logic testing, sequence validation and fault checking in a safe digital environment.
     </p>
 
-    <div class="timeline">
-        <div class="timeline-content split-card">
-            <div class="split-left">
-                <span class="week-tag">Stage 1</span>
-                <h3>NX CAD Modelling and Physics Setup</h3>
-
-                <p>
-                    Rigid bodies, collision bodies and mechanical constraints were configured in
-                    Siemens NX MCD. Fixed joints secured the machine frame, relative fixed joints
-                    grouped moving assemblies, and sliding joints represented horizontal, vertical,
-                    gripper and piston motion.
-                </p>
-
-                <ul>
-                    <li>Horizontal motion: left, right and origin</li>
-                    <li>Vertical motion: up and down</li>
-                    <li>Gripper motion: open and close</li>
-                    <li>Piston motion: extend and retract</li>
-                </ul>
-            </div>
-
-            <div class="split-right">
-                <div class="tech-card">
-                    <h3>Why it mattered</h3>
-                    <p>
-                        This allowed the model to behave like a real machine and helped validate
-                        whether the programmed PLC sequence could drive the simulated mechanical
-                        system safely and correctly.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="timeline-content split-card">
-            <div class="split-left">
-                <span class="week-tag">Stage 2</span>
-                <h3>Sensor and Actuator Configuration</h3>
-
-                <p>
-                    Sensors were configured to detect pallet arrival, middle positioning, pallet exit,
-                    left storage count, right storage count and reset/sink behaviour. Actuator signals
-                    controlled the conveyor, horizontal axis, vertical axis, grippers and piston.
-                </p>
-
-                <p>
-                    A structured naming convention was used for signals so that sensor feedback could
-                    be sent from NX to TIA Portal, while actuator commands could be sent from the PLC
-                    back to the simulation model.
-                </p>
-            </div>
-
-            <div class="split-right">
-                <div class="parameter-table">
-                    <div class="table-row table-header">
-                        <div>Signal Type</div>
-                        <div>Direction</div>
-                        <div>Purpose</div>
-                    </div>
-                    <div class="table-row">
-                        <div>Sensor Signals</div>
-                        <div>NX → PLC</div>
-                        <div>Detect pallets, workpieces and storage conditions.</div>
-                    </div>
-                    <div class="table-row">
-                        <div>Actuator Commands</div>
-                        <div>PLC → NX</div>
-                        <div>Drive conveyor, axes, gripper and piston motion.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="timeline-content split-card">
-            <div class="split-left">
-                <span class="week-tag">Stage 3</span>
-                <h3>TIA Portal PLC Program</h3>
-
-                <p>
-                    The PLC program was developed using a modular architecture. OB1 calls separate
-                    function blocks for system setup, the workpiece station sequence and output
-                    interlocks. This approach keeps the logic readable, scalable and closer to
-                    industrial programming practice.
-                </p>
-
-                <ul>
-                    <li><strong>SystemSetup FB:</strong> handles start conditions, master enable and E-stop status.</li>
-                    <li><strong>WorkpieceStation FB:</strong> controls the full automatic SCL sequence.</li>
-                    <li><strong>OutputInterlocks FB:</strong> prevents conflicting motions and maps commands to outputs.</li>
-                </ul>
-            </div>
-
-            <div class="split-right">
-                <div class="tech-card">
-                    <h3>Automatic Sequence</h3>
-                    <p>
-                        The station detects the pallet, moves it to the centre, verifies position,
-                        picks the workpiece, selects left or right storage depending on availability,
-                        drops the workpiece, updates counters and returns to idle.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="timeline-content split-card">
-            <div class="split-left">
-                <span class="week-tag">Stage 4</span>
-                <h3>HMI Testing and Operator Interaction</h3>
-
-                <p>
-                    A SIMATIC WinCC Runtime Advanced HMI was used to control and monitor the
-                    station during virtual commissioning. The HMI includes System ON, Start, Stop,
-                    Reset, sensor feedback, actuator feedback, storage counts, process status and
-                    alarm indication.
-                </p>
-
-                <p>
-                    When both storage areas become full, the source is stopped and a critical alarm
-                    guides the operator to reset the process. Emergency stop conditions halt motion
-                    and generate clear alarm feedback.
-                </p>
-            </div>
-
-            <div class="split-right">
-                <div class="tech-card">
-                    <h3>Validation Outcome</h3>
-                    <p>
-                        The complete sequence was validated digitally using S7-PLCSIM Advanced,
-                        TIA Portal, WinCC Runtime Advanced and NX MCD before deployment.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <div class="image-grid two-col">
+      <figure>
+        <img src="images/02eb081d-1878-436c-ad92-4fb5639f881d.png" alt="Front view of CP Lab Workpiece Discharge Station" />
+        <figcaption>Front view of the workpiece discharge station model.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/3fc1e92b-22ad-4071-af6b-54314dc83a5a.png" alt="Isometric view of CP Lab station" />
+        <figcaption>Isometric view showing conveyor, gripper and storage areas.</figcaption>
+      </figure>
     </div>
-</section>
 
-<!-- ================= SMART DASHBOARD ================= -->
-<section class="section" id="dashboard">
-    <h2 class="title">Smart Production Dashboard</h2>
+    <div class="tech-grid">
+      <div class="tech-card"><h3>Motion Modelling</h3><p>Sliding and fixed joints were used to represent horizontal, vertical, gripper and conveyor movement.</p></div>
+      <div class="tech-card"><h3>Sensor Simulation</h3><p>Start, middle, end and storage sensors were represented to provide feedback to PLC logic.</p></div>
+      <div class="tech-card"><h3>Sequence Testing</h3><p>The digital model was used to verify workpiece transfer, storage selection and reset behaviour.</p></div>
+      <div class="tech-card"><h3>Risk Reduction</h3><p>Faults and logic issues could be identified before connecting the system to a real workstation.</p></div>
+    </div>
+  </section>
 
+  <section class="section" id="hmi">
+    <span class="section-tag">SIEMENS HMI</span>
+    <h2 class="title">Operator Interface in WinCC Runtime Advanced</h2>
     <p class="text">
-        After validating the station through virtual commissioning, a Siemens-themed Node-RED
-        Dashboard 2.0 interface was developed to display live production data and support
-        engineering analysis. The dashboard was designed to be clean, visual and operator-focused.
+      A Siemens WinCC HMI was created to monitor the station and support operator interaction. The HMI includes system control buttons, sensor status, actuator status, production count, storage full indicators and emergency stop monitoring.
     </p>
 
-    <div class="kpi-grid">
-        <div class="kpi-card">
-            <div class="kpi-value">01</div>
-            <div class="kpi-label">Overview page showing total count, system status, E-stop and storage availability.</div>
-        </div>
-
-        <div class="kpi-card">
-            <div class="kpi-value">02</div>
-            <div class="kpi-label">Production monitoring page with left/right counts and live history table.</div>
-        </div>
-
-        <div class="kpi-card">
-            <div class="kpi-value">03</div>
-            <div class="kpi-label">Historical data page storing production records for review and analysis.</div>
-        </div>
-
-        <div class="kpi-card">
-            <div class="kpi-value">04</div>
-            <div class="kpi-label">Faults and alarms page showing event time, severity, source and message.</div>
-        </div>
-
-        <div class="kpi-card">
-            <div class="kpi-value">05</div>
-            <div class="kpi-label">Reports page exporting CSV, PDF and email summaries from production history.</div>
-        </div>
+    <div class="single-image">
+      <img src="images/5a384b0f-5010-43fd-ac8b-b3494a42d37c.png" alt="Siemens WinCC Runtime Advanced HMI" />
+      <span>Siemens WinCC Runtime Advanced HMI for the Workpiece Discharge Station.</span>
     </div>
-</section>
+  </section>
 
-<!-- ================= RESULTS ================= -->
-<section class="section dark" id="results">
-    <h2 class="title">Results and Key Findings</h2>
-
+  <section class="section dark" id="dashboard">
+    <span class="section-tag">SCADA DASHBOARD</span>
+    <h2 class="title">Siemens-Themed Node-RED Dashboard</h2>
     <p class="text">
-        The final system successfully connected virtual commissioning with smart manufacturing
-        visualisation. The project proved that a simulated production station can be validated,
-        monitored and reported using tools commonly used in modern industrial automation.
+      The Node-RED dashboard was designed with a Siemens-inspired dark navy and cyan visual theme. It converts raw OPC UA data into meaningful production information for operators, engineers and assessors.
+    </p>
+
+    <div class="dashboard-showcase">
+      <article class="dashboard-card">
+        <img src="images/Overview.jpeg" alt="Overview dashboard page" />
+        <div><h3>Overview</h3><p>Shows total count, system state, emergency stop status, storage availability and a station mimic.</p></div>
+      </article>
+
+      <article class="dashboard-card">
+        <img src="images/Producting-Monitoring.jpeg" alt="Production monitoring dashboard page" />
+        <div><h3>Production Monitoring</h3><p>Displays live production count, left/right storage counts and recent production history.</p></div>
+      </article>
+
+      <article class="dashboard-card">
+        <img src="images/Historical-Data.jpeg" alt="Historical data dashboard page" />
+        <div><h3>Historical Data</h3><p>Stores timestamped production and status records for review and traceability.</p></div>
+      </article>
+
+      <article class="dashboard-card">
+        <img src="images/Faults-and-Alarms.jpeg" alt="Faults and alarms dashboard page" />
+        <div><h3>Faults & Alarms</h3><p>Tracks active faults, emergency stop status and event logs with severity levels.</p></div>
+      </article>
+
+      <article class="dashboard-card wide">
+        <img src="images/Reports.jpeg" alt="Reports dashboard page" />
+        <div><h3>Reports</h3><p>Provides CSV export, PDF generation and email reporting for production data.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="demo">
+    <span class="section-tag">SYSTEM DEMONSTRATION</span>
+    <h2 class="title">Project Working Video</h2>
+    <p class="text">
+      The demonstration video presents the complete workflow, showing the virtually commissioned station, HMI operation and dashboard monitoring system working together.
+    </p>
+
+    <div class="video-frame">
+      <video controls preload="metadata">
+        <source src="videos/Project-Working.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section class="section dark" id="results">
+    <span class="section-tag">RESULTS & KEY FINDINGS</span>
+    <h2 class="title">What Was Achieved</h2>
+    <p class="text">
+      The final system demonstrates a complete smart manufacturing workflow: virtual commissioning, Siemens PLC simulation, HMI operation, OPC UA data exchange, real-time dashboard monitoring, alarm logging and automated reporting.
     </p>
 
     <div class="stats-grid">
-        <div class="stat-card">
-            <div class="stat-number">NX</div>
-            <div class="stat-label">Digital Twin Simulation</div>
-        </div>
-
-        <div class="stat-card">
-            <div class="stat-number">SCL</div>
-            <div class="stat-label">PLC Sequence Logic</div>
-        </div>
-
-        <div class="stat-card">
-            <div class="stat-number">OPC</div>
-            <div class="stat-label">UA Data Connectivity</div>
-        </div>
-
-        <div class="stat-card">
-            <div class="stat-number">PDF</div>
-            <div class="stat-label">Automated Reporting</div>
-        </div>
+      <div class="stat-card"><div class="stat-number">4</div><div class="stat-label">Workpiece Capacity</div></div>
+      <div class="stat-card"><div class="stat-number">2</div><div class="stat-label">Storage Areas</div></div>
+      <div class="stat-card"><div class="stat-number">5</div><div class="stat-label">Dashboard Pages</div></div>
+      <div class="stat-card"><div class="stat-number">3</div><div class="stat-label">Report Outputs</div></div>
     </div>
 
     <div class="insight-grid">
-        <div class="insight-card">
-            <div class="insight-number">01</div>
-            <h3>Reduced Commissioning Risk</h3>
-            <p>
-                Testing the station digitally made it possible to identify sequencing and interaction
-                issues before physical deployment.
-            </p>
-        </div>
-
-        <div class="insight-card">
-            <div class="insight-number">02</div>
-            <h3>Improved Data Visibility</h3>
-            <p>
-                Operators can now view live production count, storage state, system status and alarms
-                from one central dashboard.
-            </p>
-        </div>
-
-        <div class="insight-card">
-            <div class="insight-number">03</div>
-            <h3>Practical Industry 4.0 Integration</h3>
-            <p>
-                The project demonstrates how PLC data, simulation, dashboards and reports can be
-                integrated into a connected smart manufacturing workflow.
-            </p>
-        </div>
+      <div class="insight-card"><h3>Strengths</h3><p>The project successfully links control logic, HMI, simulated station behaviour and a modern dashboard into one connected engineering solution.</p></div>
+      <div class="insight-card"><h3>Limitations</h3><p>When live hardware was not available, realistic simulated data was used to continue dashboard testing and reporting validation.</p></div>
+      <div class="insight-card"><h3>Future Work</h3><p>The system could be expanded with OEE calculations, cloud connectivity, Siemens Industrial Edge and predictive maintenance analytics.</p></div>
     </div>
-</section>
+  </section>
 
-<!-- ================= REFLECTION ================= -->
-<section class="section" id="reflection">
-    <h2 class="title">Analysis and Reflection</h2>
-
-    <div class="analytics-grid">
-        <div class="analytics-card">
-            <h3>Strengths</h3>
-            <p>
-                The main strength of the project is the complete workflow from virtual machine
-                validation to real-time dashboard monitoring. It does not only simulate the system;
-                it also converts machine data into useful operator information.
-            </p>
-        </div>
-
-        <div class="analytics-card">
-            <h3>Limitations</h3>
-            <p>
-                The dashboard currently focuses on the most relevant production values rather than
-                a full enterprise-level manufacturing execution system. Future work could add OEE,
-                trend charts, cloud storage and predictive maintenance.
-            </p>
-        </div>
-
-        <div class="analytics-card">
-            <h3>Lessons Learned</h3>
-            <p>
-                The project showed that successful automation is not only about writing PLC code.
-                It also requires clear signal design, safe interlocks, realistic simulation, useful
-                operator feedback and meaningful data presentation.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- ================= FUTURE DEVELOPMENT ================= -->
-<section class="section dark" id="future">
-    <h2 class="title">Future Development</h2>
-
+  <section class="section" id="reflection">
+    <span class="section-tag">REFLECTION</span>
+    <h2 class="title">Engineering Learning</h2>
     <p class="text">
-        The project can be extended into a more advanced smart factory platform by adding deeper
-        analytics, predictive functions and wider system integration.
+      This project strengthened practical understanding of Siemens automation tools, virtual commissioning principles, OPC UA communication, dashboard design and production reporting. It shows how digital tools can reduce commissioning risk while improving production visibility and decision-making.
     </p>
+  </section>
 
-    <div class="grid">
-        <div class="card">
-            <h3>OEE Analytics</h3>
-            <p>Calculate availability, performance and quality from live production data.</p>
-        </div>
+  <footer>
+    <p>CP LAB Smart Production Dashboard — Siemens Connected Curriculum Competition 2025/2026</p>
+  </footer>
 
-        <div class="card">
-            <h3>Cloud Connectivity</h3>
-            <p>Send production records to a cloud or Siemens Industrial Edge environment.</p>
-        </div>
-
-        <div class="card">
-            <h3>Predictive Maintenance</h3>
-            <p>Use sensor trends and fault history to predict machine problems earlier.</p>
-        </div>
-
-        <div class="card">
-            <h3>Multi-Station Dashboard</h3>
-            <p>Extend the system to monitor multiple CP Lab stations from one interface.</p>
-        </div>
-    </div>
-</section>
-
-<!-- ================= REFERENCES ================= -->
-<section class="section" id="references">
-    <h2 class="title">References and Tools Used</h2>
-
-    <p class="text">
-        The project was developed using Siemens NX Mechatronics Concept Designer, Siemens TIA
-        Portal, S7-PLCSIM Advanced, SIMATIC WinCC Runtime Advanced, OPC UA and Node-RED
-        Dashboard 2.0. The project aligns with Siemens Connected Curriculum principles by
-        demonstrating a clear problem, structured methodology, practical implementation,
-        engineering analysis and future development potential.
-    </p>
-
-    <div class="tech-grid">
-        <div class="tech-card">
-            <h3>Siemens NX MCD</h3>
-            <p>Used for digital twin creation, physics setup and virtual machine behaviour.</p>
-        </div>
-
-        <div class="tech-card">
-            <h3>TIA Portal</h3>
-            <p>Used for PLC programming, tag configuration and automatic sequence control.</p>
-        </div>
-
-        <div class="tech-card">
-            <h3>Node-RED</h3>
-            <p>Used for dashboard visualisation, data processing, historical logging and reports.</p>
-        </div>
-    </div>
-</section>
-
-<footer>
-    MSc Robotics & Automation • Siemens Connected Curriculum Competition 2025/2026
-</footer>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
