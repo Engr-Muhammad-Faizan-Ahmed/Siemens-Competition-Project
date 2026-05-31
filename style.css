@@ -245,3 +245,26 @@ footer{text-align:center;padding:48px 20px;color:#9fb8c7;border-top:1px solid rg
         font-size: 18px;
     }
 }
+
+.hero-title{
+    font-size: clamp(4.5rem, 8vw, 8rem);
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -3px;
+    text-align: center;
+    color: #ffffff;
+
+    text-shadow:
+        0 0 20px rgba(0,229,229,0.2),
+        0 0 60px rgba(0,229,229,0.1);
+
+    margin-bottom: 30px;
+}
+
+.hero-title span{
+    color: #00e5e5;
+
+    text-shadow:
+        0 0 15px rgba(0,229,229,0.5),
+        0 0 40px rgba(0,229,229,0.25);
+}
